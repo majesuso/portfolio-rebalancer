@@ -3,7 +3,8 @@ import PortfolioForm from "./components/PortfolioForm";
 import PortfolioSummary from "./components/PortfolioSummary";
 import RebalanceResult from "./components/RebalanceResult";
 import { usePortfolio } from "./hooks/usePortfolio";
-import { PortfolioPosition, Stock } from "./types";
+import { PortfolioPosition } from "./types/PortfolioPosition";
+import { Stock } from "./types/Stock";
 
 function App() {
   const {

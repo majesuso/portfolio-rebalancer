@@ -1,5 +1,5 @@
+import type { RebalanceAction, TargetAllocation } from ".";
 import type { PortfolioPosition } from "./PortfolioPosition";
-import type { Stock } from "./Stock";
 
 export class Portfolio {
     readonly portfolioPositions: readonly PortfolioPosition[];
@@ -111,19 +111,3 @@ export class Portfolio {
         return rebalanceActions
     }
 }
-
-export interface TargetAllocation {
-    readonly stock: Stock;
-    readonly percentage: number;
-}
-
-export interface RebalanceAction {
-    symbol: string;
-    action: RebalanceActionType;
-    amount: number;
-}
-
-export type RebalanceActionType =
-    | "BUY"
-    | "SELL"
-    | "HOLD";

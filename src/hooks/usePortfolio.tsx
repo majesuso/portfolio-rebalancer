@@ -1,10 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { INITIAL_POSITIONS } from '../contants';
-import type { PortfolioPositionForm, RebalanceAction } from '../types';
+import type { RebalanceAction, PortfolioFormValues } from '../types';
 
-interface PortfolioFormValues {
-    positions: PortfolioPositionForm[];
-}
 export const usePortfolio = () => {
     const {
         register,

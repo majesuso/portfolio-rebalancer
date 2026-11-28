@@ -1,10 +1,6 @@
 import type { UseFormRegister } from "react-hook-form";
-import type { PortfolioPositionForm } from "../types";
+import type { PortfolioFormValues, PortfolioPositionForm } from "../types";
 import { formatCurrency } from "../utils/formatCurrency";
-
-interface PortfolioFormValues {
-  positions: PortfolioPositionForm[];
-}
 
 interface PortfolioFormProps {
   register: UseFormRegister<PortfolioFormValues>;
